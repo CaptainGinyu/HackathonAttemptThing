@@ -85,6 +85,20 @@ namespace GameThing
 
             pressChallDict.Add(Keys.Space, "the space bar");
             pressChallDict.Add(Keys.Tab, "tab");
+            pressChallDict.Add(Keys.P, "P");
+            pressChallDict.Add(Keys.B, "B");
+            pressChallDict.Add(Keys.R, "R");
+            pressChallDict.Add(Keys.V, "V");
+            pressChallDict.Add(Keys.L, "L");
+            pressChallDict.Add(Keys.N, "N");
+            pressChallDict.Add(Keys.G, "G");
+            pressChallDict.Add(Keys.F, "F");
+            pressChallDict.Add(Keys.I, "I");
+            pressChallDict.Add(Keys.Z, "Z");
+            pressChallDict.Add(Keys.X, "X");
+            pressChallDict.Add(Keys.LeftAlt, "left alt");
+            pressChallDict.Add(Keys.C, "C");
+
 
 
             KeyPos = new Dictionary<int,Keys>();
