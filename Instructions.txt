@@ -1,0 +1,11 @@
+You control 2 blocks: a red block and a blue block.
+
+The red block is controlled by the four arrow keys on the keyboard (up arrow to go up, down arrow to go down, left arrow to go left, and right arrow to go right).  The blue block is controlled by the keys W,A,S,D (W to go up, A to go left, S to go down, and D to go right).
+
+There are 2 other blocks are are trying to touch the blocks you control. Each time they touch one of your blocks, your blocks lose health. The longer the blocks touch your blocks, the more health your blocks lose. You also lose health for your blocks if one of your blocks touches your other block.
+
+Also, every 15 seconds, a message will tell you to press a certain key on your keyboard within 3 seconds. Failing to do so results in the loss of 5 points of health from each of your blocks.
+
+When one of your blocks loses all its health, you lose.
+
+Score is determined by how many seconds you last before you lose.
