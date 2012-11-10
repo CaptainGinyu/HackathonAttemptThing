@@ -24,6 +24,7 @@ namespace GameThing
 
         Player you;
         Character enemy;
+        int score;
 
         Player you2;
         Character enemy2;
@@ -73,6 +74,8 @@ namespace GameThing
             theSeconds = 0;
             pressCorrect = false;
             currKey = Keys.LeftShift;
+
+            score = 0;
 
             pressChallDict = new Dictionary<Keys,string>();
 
@@ -348,6 +351,7 @@ namespace GameThing
             {
                 GraphicsDevice.Clear(Color.LightGray);
                 timeSeconds = Convert.ToInt32(gameTime.TotalGameTime.TotalSeconds);
+                score = timeSeconds;
                 // TODO: Add your drawing code here
                 base.Draw(gameTime);
                 spriteBatch.Begin();
@@ -356,6 +360,7 @@ namespace GameThing
                 you2.draw(spriteBatch);
                 enemy.draw(spriteBatch);
                 enemy2.draw(spriteBatch);
+                spriteBatch.DrawString(font, "Score: " + score, new Vector2(350, GraphicsDevice.Viewport.Height - 25), Color.Black);
                 spriteBatch.DrawString(font, "Health of Block 1: " + you.getHealth(), new Vector2(10, 10), Color.Black);
                 spriteBatch.DrawString(font, "Health of Block 2: " + you2.getHealth(), new Vector2(250, 10), Color.Black);
                 if (pressChall)
@@ -386,6 +391,7 @@ namespace GameThing
                 GraphicsDevice.Clear(Color.Blue);
                 spriteBatch.Begin();
                 spriteBatch.DrawString(font, "Game over, you fool!", new Vector2(GraphicsDevice.Viewport.Width / 4, GraphicsDevice.Viewport.Height / 4), Color.White);
+                spriteBatch.DrawString(font, "Your final score: " + score, new Vector2(GraphicsDevice.Viewport.Width / 4, GraphicsDevice.Viewport.Height / 2), Color.White);
                 spriteBatch.End();
             }
         }
